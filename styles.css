@@ -1,0 +1,317 @@
+body {
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  border-bottom-left-radius: 100px;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-image: linear-gradient(
+    to top right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+  border-bottom-left-radius: 100px;
+}
+
+.header-content {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+header button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1.5px solid white;
+  background-color: white;
+  font-weight: 600;
+}
+
+.start {
+  color: hsl(353, 100%, 62%);
+}
+
+header button:hover {
+  cursor: pointer;
+}
+
+.learnBtn {
+  color: white;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+header h1,
+header p {
+  color: white;
+}
+
+header h1,
+header p,
+header button {
+  margin: 10px 0;
+  font-family: "overpass";
+}
+
+section {
+  /* background-color: white; */
+  overflow: hidden;
+}
+
+.right-nav {
+  position: absolute;
+  right: 7px;
+}
+
+.left-nav li {
+  position: relative;
+  bottom: -12px;
+  left: 30px;
+}
+
+nav {
+  position: absolute;
+  background-color: transparent;
+  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass";
+  color: white;
+  font-weight: 600;
+  padding-top: 15px;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul div {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-inline-end: 35px;
+}
+
+.products,
+.company,
+.connect {
+  display: none;
+}
+
+.left-nav li.option:hover {
+  cursor: pointer;
+}
+
+.signUp {
+  border: 1px solid white;
+  padding: 6px 20px;
+  border-radius: 100px;
+  background-color: white;
+  color: hsl(353, 100%, 62%);
+}
+
+.login {
+  margin-top: 8px;
+  margin-right: 40px;
+}
+
+.login a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Second Area */
+
+.first {
+  margin: 100px 0;
+  width: 100vw;
+  height: 700px;
+  font-family: "Overpass";
+  background-color: transparent;
+  margin-bottom: 70px;
+  position: relative; /* Add position: relative to create a new positioning context */
+  overflow: hidden; /* Clip the image to prevent horizontal overflow */
+}
+
+.first img {
+  position: absolute;
+  right: 7%;
+  top: 0%;
+  transform: translateX(50%);
+  z-index: -1;
+  height: 700px;
+  width: auto; /* Set width to auto to maintain aspect ratio */
+  max-width: none; /* Remove the max-width property */
+}
+
+.first h2 {
+  text-align: center;
+  font-size: 42px;
+}
+
+.first h3 {
+  font-size: 32px;
+}
+
+.first p {
+  font-size: 17px;
+}
+
+.p1,
+.p2 {
+  width: 800px;
+  line-height: 1.5rem;
+  margin: 100px 125px;
+}
+
+.second {
+  background-image: linear-gradient(
+    to bottom left,
+    hsl(237, 23%, 32%),
+    hsl(237, 17%, 21%)
+  );
+  color: hsl(240, 2%, 79%);
+  width: 100vw;
+  height: 350px;
+  font-family: "Overpass";
+  display: flex;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+
+.background {
+  position: relative;
+  height: 550px;
+  top: -35%;
+  left: 50px;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 138%;
+  left: 10%;
+  z-index: 1;
+  /* overflow: visible; */
+}
+
+.text {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
+.text h2 {
+  font-size: 32px;
+}
+
+.third {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: hidden;
+  font-family: "Overpass";
+}
+
+.third img {
+    height: 550px;
+    position: relative;
+    left: -29%;
+}
+
+.p3 {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  right: -28%;
+}
+
+.p3 h3 {
+    font-size: 26px;
+}
+
+.p3 p {
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.p4 {
+  margin-bottom: 75px;  
+}
+
+footer {
+    height: 350px;
+    background-color: hsl(237, 17%, 21%);
+    border-top-right-radius: 100px;
+    display: flex;
+    color: hsl(240, 2%, 79%);
+    font-family: "Ubuntu";
+}
+
+footer div {
+    width: 25%;
+    margin-top: 35px;
+}
+
+.heading {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    margin-top: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  background-color: hsl(237, 17%, 21%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

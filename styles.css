@@ -139,6 +139,10 @@ nav li {
   color: hsl(353, 100%, 62%);
 }
 
+.signUp:hover {
+  cursor: pointer;
+}
+
 .login {
   margin-top: 8px;
   margin-right: 40px;
